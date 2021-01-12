@@ -1,0 +1,10 @@
+"use strict";
+
+var array = ['1', '2', '3'];
+<view>
+  <button wx:if="{{state.flag}}">Click Me</button>
+  
+  <cus-text wx:for="{{['a','b','c',1,2]}}" wx:for-item="{{item}}">{{item}}</cus-text>
+  
+  <image lazy-load wx:for="{{array}}" wx:for-item="{{item}}" wx:for-index="{{index}}">{{item}}</image>      
+</view>;

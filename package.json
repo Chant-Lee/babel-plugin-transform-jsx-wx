@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx rollup --config",
-    "remove": "npx babel example/test.js "
+    "remove": "npx babel example/test.js -o example/test-compile.js ",
+    "jsx": "npx rollup --config && npx babel example/aaa.jsx -o example/test-aaa.wxml"
   },
   "repository": {
     "type": "git",
