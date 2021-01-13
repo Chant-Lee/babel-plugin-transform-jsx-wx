@@ -7,7 +7,7 @@ export default [
     },
   },
   {
-    input: 'src/index.js',
+    input: 'wx/index.js',
     output: {
       file: 'lib/index.js',
       format: 'cjs',

@@ -1,8 +1,6 @@
 // import IVisitor from './visitor'
 import { transformCase } from './utils'
 const namespace = 'wx'
-const tagNameLetterCase = 'kebab'
-const attrNameLetterCase = 'kebab'
 const delimiterStart = '{{'
 const delimiterEnd = '}}'
 const directiveIf = `${namespace}:if`
@@ -140,10 +138,10 @@ const transformJSXToWXml = function ({ types: t }) {
             }
           }
         } else if (expression.isIdentifier()) {
-          console.log(8888, path)
-          path.replaceWith(
-            t.jSXText(`${delimiterStart}${expression.node.name}${delimiterEnd}`)
-          )
+          console.log(8888, expression.node, expression.get('expression'))
+          // path.replaceWith(
+          //   t.jSXText(`${delimiterStart}${expression.node.name}${delimiterEnd}`)
+          // )
         } else if (
           expression.isStringLiteral() ||
           expression.isBooleanLiteral() ||
