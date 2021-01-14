@@ -3,8 +3,13 @@ import {Component} from 'react'
 
 const array = ['1', '2', '3'];
 
-class App extends Component {
+class Aaa extends Component {
+  constructor(props){
+    super(props);
+    this.state = {}
+ }
 
+ onClick(){}
   render() {
     return <div>
       {this.state.flag && <Button>Click Me</Button>}
@@ -16,7 +21,7 @@ class App extends Component {
   }
 }
 
-export function C() {
+function C() {
   return <div>
   {this.state.flag && <Button>Click Me</Button>}
   

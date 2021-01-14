@@ -7,7 +7,7 @@ export default [
     },
   },
   {
-    input: 'wx/index.js',
+    input: 'wxPlugin/index.js',
     output: {
       file: 'lib/index.js',
       format: 'cjs',

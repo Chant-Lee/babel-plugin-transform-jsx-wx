@@ -1,0 +1,24 @@
+{
+  "description": "小程序配置文件",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "1.0.0",
+  "appid": "你自己的id",
+  "projectname": "hello word",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": []
+    }
+  }
+}

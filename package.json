@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx rollup --config",
     "remove": "npx babel example/test.js -o example/test-compile.js ",
-    "jsx": "npx rollup --config && npx babel example/aaa.jsx -o example/test-aaa.wxml"
+    "dev": "node bin/dev.js"
   },
   "repository": {
     "type": "git",
@@ -27,13 +27,19 @@
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
     "@babel/node": "^7.12.10",
+    "@babel/plugin-syntax-class-properties": "^7.12.1",
     "@babel/plugin-syntax-jsx": "^7.12.1",
     "@babel/plugin-transform-react-jsx": "^7.12.12",
     "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "@babel/runtime": "^7.12.5",
     "@babel/types": "^7.12.12",
-    "fs-extra": "^9.0.1"
+    "chalk": "^2.4.2",
+    "fs-extra": "^9.0.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "wt": "^1.2.0"
   },
   "devDependencies": {
     "rollup": "^2.36.1"
